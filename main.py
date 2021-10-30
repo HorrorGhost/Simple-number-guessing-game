@@ -11,6 +11,12 @@ time.sleep(1)
 print("You have to guess a number between 1 to 5")
 time.sleep(1)
 
+play = input ("Do you want to play? (yes/no) ")
+play = play.lower()
+if play != "yes":
+    print("It was nice taking to you, bye")
+    quit()
+
 while guess_count < guess_limit:
     
     guess = int(input("Enter a number: "))
